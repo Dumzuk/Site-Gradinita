@@ -1,0 +1,1186 @@
+/************ Elemente generale **************/
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.button-to-top {
+    position: fixed;
+    bottom: 5;
+    right: 5%;
+}
+
+
+/* span */
+
+.logo span {
+    color: black;
+}
+
+.img-despre {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraf-despre {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.4s linear;
+}
+
+nav a,
+footer a {
+    color: white;
+    margin: 0 20px;
+}
+
+nav a:hover,
+footer a:hover {
+    color: black;
+}
+
+
+/********************  Header *************************/
+
+hr {
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid #474242;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 113, 5);
+    padding: 30px 100px;
+    align-items: center;
+}
+
+
+/* first-title h2 */
+
+.first-title {
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/******************* Sectiunea hero-banner *******************/
+
+.navbar-icon span {
+    width: 35px;
+    height: 5px;
+    background: #a09191;
+    pointer-events: none;
+}
+
+.navbar-icon {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #474242;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-banner {
+    background-image: url(/imagini/home.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -132px;
+}
+
+.hero-continut,
+.preturi-buton {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 11px;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    max-width: 80%;
+    text-transform: uppercase;
+}
+
+.hero-continut a,
+.preturi-buton {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #474242;
+    padding: 5px 30px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.hero-continut a:hover,
+.preturi-buton:hover,
+.cartonas-buton:hover,
+.testimonials-section button:hover {
+    background-color: #a09191;
+    transition: 0.6s;
+}
+
+
+/* sectiunea galerie-banner */
+
+.galerie-banner {
+    background-image: url("/imagini/galerie.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* galerie foto */
+
+.galerie-foto,
+.galerie-foto-2 {
+    display: flex;
+    width: 100%;
+    max-height: 80%;
+    flex-wrap: wrap;
+    margin: 350px auto;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+img {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -52px;
+}
+
+.galerie-foto,
+.galerie-foto-2,
+img:hover {
+    transform: scale(1.1);
+}
+
+.galerie-foto img {
+    margin-top: 300px;
+}
+
+.galerie-foto,
+.galerie-foto-2 {
+    margin-top: -300px;
+}
+
+.galerie-foto-2 {
+    margin-top: -320px;
+}
+
+.cartonas-imagini {
+    margin-top: -300px;
+}
+
+.cartonas-imagini h2 {
+    margin-top: 300px;
+}
+
+
+/************** Sectiunea info/despre noi ****************/
+
+.info-section {
+    width: 100%;
+    height: 0px;
+    padding: 100px;
+    text-align: center;
+    background: linear-gradient( to top right, #fff 20%, rgb(255, 113, 5) 60%, rgba(194, 22, 22, 0.5) 20%, rgba(46, 5, 143, 0.5) 70%);
+}
+
+
+/******************** Footer ************************/
+
+footer,
+.galerie-footer {
+    background-color: rgb(255, 113, 5);
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.galerie-footer {
+    margin-top: 62vh;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.autor {
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px
+}
+
+
+/* Child-banner */
+
+.child-banner {
+    background-color: rgb(240, 246, 250);
+    margin-top: 300px;
+}
+
+.child-banner img {
+    width: 400px;
+    height: 600px;
+    margin-left: 10%;
+    margin-top: -336px;
+}
+
+.child-h2 {
+    margin-left: 40%;
+    margin-bottom: -7px;
+    font-size: 65px;
+    margin-top: 26px;
+}
+
+#gri {
+    color: gray;
+}
+
+#portocaliu {
+    color: yellowgreen;
+}
+
+
+/* Sectiunea de servicii */
+
+.services-section {
+    padding: 50px;
+}
+
+.services-section,
+h2:first-child {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.paragraf {
+    margin-top: 28px;
+}
+
+.cartonas-descriere {
+    font-size: 20px;
+}
+
+.servicii {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.servicii-cartonas {
+    width: 25%;
+    text-align: center;
+}
+
+.cartonas-buton {
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #474242;
+}
+
+.cartonas-imagine {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    object-fit: contain;
+}
+
+.cartonas-descriere {
+    display: none;
+}
+
+.activ {
+    display: flex;
+}
+
+
+/* servicii page */
+
+.servicii-baner {
+    background-image: url(/imagini/galerie.jpg);
+    height: 40%;
+    background-size: cover;
+    margin-top: -142px;
+}
+
+.cartonas-despree p {
+    padding: 75px;
+    text-align: center;
+    margin-top: 538px;
+}
+
+
+/*                     DESCRIERE page         */
+
+.descriere-baner {
+    background-image: url(/imagini/galerie.jpg);
+    height: 40%;
+    background-size: cover;
+    margin-top: -140px;
+}
+
+.despre-title {
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -40%;
+    color: rgb(255, 113, 5);
+}
+
+.baner-secundar {
+    background-image: url(/imagini/cadre-banner.jpg);
+    height: 20%;
+    background-size: cover;
+}
+
+.cartonas-numar,
+.cartonas-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: -70px;
+}
+
+.cartonas-numar {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    gap: 124px;
+}
+
+.cartonas-text p {
+    border: 1px solid orange;
+    width: 226px;
+    height: 57px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 113, 5);
+    color: white;
+    font-weight: bold;
+    margin-top: -60px;
+}
+
+.cartonas-statistica {
+    margin-top: -60px;
+}
+
+.cartonas-despre,
+.cartonas-despree {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.cartonas-despre img {
+    width: 855px;
+    margin-top: 48px;
+    margin: 50 auto;
+}
+
+.cartonas-despre p {
+    width: 585px;
+    margin-left: -15%;
+    margin-top: 6%;
+}
+
+.despree-title {
+    color: orange;
+    text-align: center;
+    margin-top: -633px;
+    font-size: 30px;
+}
+
+.catronas-checkbox img {
+    width: 32px;
+    height: 36px;
+    margin-top: 65px;
+}
+
+.catronas-checkbox p {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50 auto;
+}
+
+.catronas-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.all-checkbox {
+    background-color: rgb(240, 246, 250);
+}
+
+
+/* preturi page */
+
+.toate-semestrele {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+}
+
+.catronass-checkbox img {
+    width: 32px;
+    height: 36px;
+    margin-top: 25px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    color: rgb(255, 113, 5);
+}
+
+.sem1,
+.sem2,
+.sem3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    font-size: 22px;
+    background-color: rgb(240, 246, 250);
+    color: black
+}
+
+.toate-semestrele .preturi-buton {
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+.sem1 p,
+.sem2 p,
+.sem3 p {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.descriere-preturi p {
+    text-align: center;
+    background-color: rgb(240, 246, 250);
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* GALERIE PAGE */
+
+.banner-servicii,
+.preturi-baner {
+    background-image: url(/imagini/galerie.jpg);
+    height: 451px;
+    margin-top: -141px;
+    background-size: cover;
+}
+
+.galerie-baner {
+    background-image: url(/imagini/galerie.jpg);
+    height: 414px;
+    margin-top: -144px;
+    max-width: 100%;
+    background-size: cover;
+    background: cover;
+    background-repeat: no-repeat;
+}
+
+.cartonas-statisticaa {
+    margin-top: -257px;
+    background-image: url(/imagini/cadre-banner.jpg);
+}
+
+.cartonas-textt {
+    display: flex;
+    margin-top: 9px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 4px;
+    align-items: flex-start;
+}
+
+.cartonas-numarr {
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: -82px;
+    gap: -59px;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    gap: 103px;
+    margin-left: 115px;
+    gap: -175px;
+    margin-top: 255px;
+}
+
+.cartonas-numarrr {
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 456px;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    gap: 8px;
+    gap: 30%;
+    /* margin-left: -5px; */
+    margin-top: 255px;
+}
+
+.cartonas-numarr img {
+    object-fit: contain;
+    width: 50px;
+}
+
+.cartonas-textt p {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 45px;
+}
+
+.activitati {
+    text-align: center;
+}
+
+
+/* formular */
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: -23px;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.formular strong {
+    font-size: 20px;
+}
+
+.formular textarea {
+    resize: none;
+}
+
+
+/* SERVICII PAGE */
+
+
+/* Responsiveness */
+
+@media screen and (max-width:1391px) {
+    .navbar {
+        position: absolute;
+        left: 0;
+        margin-top: -213px;
+        flex-direction: column;
+        transform: translate(0, 100%);
+        width: 100%;
+        background-color: #474242;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .navbar-icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .info-section {
+        padding: 30px;
+    }
+    .hero-banner {
+        margin-top: -163px;
+    }
+    .services-section {
+        margin-top: -160px;
+    }
+    .servicii {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .servicii-cartonas {
+        width: 90%;
+    }
+    .testimonials-section button {
+        position: absolute;
+        bottom: 15%;
+    }
+    .testimonials-section.inapoi {
+        left: 30%;
+    }
+    .testimonials-section.urmatorul {
+        right: 30%;
+    }
+    .testimonial {
+        flex-direction: column;
+    }
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonials-section {
+        position: relative;
+    }
+    .navbar-icon {
+        display: flex;
+    }
+    .navbar {
+        position: absolute;
+        left: 0;
+        margin-top: -225px;
+        flex-direction: column;
+        transform: translate(0, 100%);
+        width: 100%;
+        background-color: #474242;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    header {
+        padding: 30px;
+    }
+    .galerie-foto {
+        display: flex;
+        flex-direction: row;
+    }
+    .galerie-foto-2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .galerie-foto img {
+        margin: 0%;
+    }
+    .galerie-foto,
+    .galerie-foto-2 {
+        margin-top: -20px;
+        background-color: #a09191;
+    }
+    .child-banner img {
+        width: 226px;
+        margin-top: -359px;
+        margin-left: -11px;
+        height: 435px;
+    }
+    .child-h2 {
+        font-size: 30px;
+    }
+}
+
+.child-banner {
+    margin-top: -200px;
+}
+
+.child-h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 60%;
+}
+
+footer {
+    margin-top: -2px;
+}
+
+.child-banner {
+    margin-top: 350px;
+    height: 630px;
+}
+
+#despre {
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.first-title {
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    margin-top: 220px;
+}
+
+.hero-continut {
+    margin-top: 300px;
+}
+
+#servicii {
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 960px) {
+    h2 {
+        margin-top: 50px;
+        color: rebeccapurple;
+    }
+    .child-h2 {
+        font-size: 40px;
+        margin-left: 65%;
+        font-size: 40px;
+        margin-top: -7px;
+    }
+    .info-section p {
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .child-banner {
+        margin-top: 711px;
+    }
+    h2:first-child {
+        color: #000000;
+        font-size: 50px;
+        margin-top: -95px;
+    }
+}
+
+.cartonass-text {
+    display: none;
+}
+
+
+/* Despre noi responsive */
+
+@media screen and (max-width: 950px) {
+    .cartonas-despre p {
+        text-align: center;
+        margin-left: -440px;
+    }
+    .child-banner {
+        margin-top: 1349px;
+        height: 500px;
+    }
+    .cartonas-despre img {
+        object-fit: contain;
+        margin-left: 16px;
+        width: 90%;
+        margin-top: -359px;
+    }
+    .despree-title {
+        margin-top: -10px;
+        font-size: 20px;
+        width: 300px;
+        margin-left: -80%;
+    }
+    h2:first-child {
+        font-size: 40px;
+        margin-top: 23px;
+        color: black;
+    }
+    .descriere-baner {
+        margin-top: -96px;
+        width: 100%;
+        height: 217px;
+    }
+    .despre-title {
+        font-size: -10px;
+    }
+    .cartonas-numar {
+        display: flex;
+        display: block;
+        visibility: hidden;
+        flex-direction: row;
+    }
+    .cartonas-text {
+        gap: 45px;
+        cursor: pointer;
+        margin-top: -738px;
+        display: flex;
+        margin-left: 10%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cartonas-text p {
+        border: 1px solid orange;
+        width: 100%;
+        margin-left: -20px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(255, 113, 5);
+        color: white;
+        font-weight: bold;
+        margin-top: -60px;
+    }
+    .baner-secundar {
+        height: 40%;
+        margin-top: -1px;
+    }
+    footer {
+        margin-top: -200px;
+    }
+    .cartonas-statistica {
+        margin-top: 339px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 172px;
+        margin-top: 97px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 949px) {
+    .cartonas-despre p {
+        margin-left: -480px;
+        margin-top: 31px;
+        color: rebeccapurple;
+        text-align: center;
+    }
+    .cartonas-despre img {
+        width: 500px;
+    }
+    h2:first-child {
+        font-size: 50px;
+        margin-top: 47px;
+        color: black;
+    }
+    .baner-secundar {
+        height: 40%;
+        margin-top: -1px;
+    }
+    .cartonas-text {
+        gap: 45px;
+        cursor: pointer;
+        margin-top: -758px;
+        display: flex;
+        margin-left: 5%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cartonas-text p {
+        border: 1px solid orange;
+        width: 100%;
+        margin-left: -20px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(255, 113, 5);
+        color: white;
+        font-weight: bold;
+        margin-top: -60px;
+    }
+}
+
+
+/* Responsive galerie page */
+
+@media screen and (max-width: 950px) {
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        max-height: 80%;
+        object-fit: cover;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 70%;
+        left: 50%;
+        overflow: hidden;
+        border: 20px solid #fff;
+        border-radius: 8px;
+    }
+    @keyframes slide {
+        75% {
+            transform: translate(-30%);
+        }
+    }
+}
+
+
+/* servicii responsive */
+
+*/ .baner-secundarr {
+    background-image: url(/imagini/cadre-banner.jpg);
+    height: 20%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .servicii-baner {
+        background-image: url(/imagini/galerie.jpg);
+        height: 15%;
+        background-size: cover;
+        margin-top: -96px;
+    }
+    .baner-secundar {
+        width: 100%;
+    }
+    .cartonas-statisticaa {
+        width: 100%;
+    }
+    .activitati {
+        width: 100%;
+    }
+    .cartonas-textt {
+        gap: -32px;
+        margin-left: 20px;
+        padding: -10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 156px;
+        gap: -45px;
+        gap: 357px;
+        display: none;
+    }
+    .cartonas-despree {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    .baner-secundarr {
+        margin-top: 20px;
+    }
+    .cartonas-numarr {
+        display: none;
+    }
+    .baner-secundarr {
+        width: 100%;
+        height: 90%;
+        margin-top: -94px;
+    }
+    .cartonas-statisticaa {
+        margin-top: -586px;
+        width: 100%;
+        height: 40%;
+    }
+}
+
+img {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -69px;
+}
+
+.cartonas-numarr img {
+    width: 100px;
+}
+
+.despree-title {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    ;
+}
+
+.img-despre {
+    margin-top: -71px;
+    padding: 42px;
+    width: 700px;
+}
+
+.cartonas-despree p {
+    margin-top: -76px;
+}
+
+#img2 {
+    margin-top: 20px;
+}
+
+.cartonas-despre img {
+    margin-top: -300px;
+}
+
+.img2 {
+    margin-left: 200px;
+}
+
+.text2 {
+    margin-left: 200px;
+}
+
+.cartonas-numarr img {
+    margin-left: 0px;
+    margin-top: -1px;
+}
+
+
+/* preturi responsive */
+
+@media screen and (max-width: 950px) {
+    .toate-semestrele {
+        display: flex;
+        flex-direction: column;
+        word-wrap: 100%;
+    }
+    .sem1,
+    .sem2,
+    .sem3 {
+        width: 100%;
+    }
+}
+
+
+/* responsive servicii  */
+
+@media screen and (max-width: 950px) {
+    .cartonas-superior {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 204px;
+        gap: 270px;
+    }
+    .cartonas-superior p {
+        height: 329px;
+        margin-top: -232px;
+        font-size: 16px;
+        margin-left: -20px;
+    }
+}
+
+.cartonas-textulet {
+    display: none;
+}
+
+
+/* contact responsive */
+
+@media screen and (min-width: 500px) and (max-width: 960px) {
+    .cartonas-textulet p {
+        border: 6px solid orange;
+        width: 50%;
+        margin-left: 2%;
+        height: 48px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(255, 113, 5);
+        color: white;
+        font-weight: bold;
+        gap: -25px;
+        margin-top: 20px;
+    }
+    .cartonas-textulet {
+        cursor: pointer;
+        margin-top: 272px;
+        display: flex;
+        gap: 11px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 293px;
+    }
+}
+
+
+/* ADD COOKIES */
+
+.wrapper {
+    padding: 32px;
+}
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6f6;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.116);
+    transition: 400ms;
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container a {
+    color: #f5f6f6;
+}
+
+.cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6f6;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .button-to-top {
+        position: fixed;
+        bottom: 5;
+        right: 5%;
+        width: 150px;
+        margin-left: 50%;
+    }
+}
